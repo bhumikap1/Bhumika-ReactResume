@@ -1,34 +1,16 @@
 // App.js
+import React, { useEffect } from "react";
 import "./App.css";
+import AOS from "aos";
 import "aos/dist/aos.css";
-import Particles from "react-tsparticles";
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <div className="App">
-      <Particles
-        id="tsparticles"
-        options={{
-          background: { color: "#0d0d0d" },
-          fpsLimit: 60,
-          particles: {
-            color: { value: "#00bcd4" },
-            links: {
-              color: "#00bcd4",
-              distance: 150,
-              enable: true,
-              opacity: 0.3,
-              width: 1,
-            },
-            move: { enable: true, speed: 2 },
-            number: { value: 60 },
-            opacity: { value: 0.5 },
-            shape: { type: "circle" },
-            size: { value: { min: 1, max: 5 } },
-          },
-        }}
-      />
-
       {/* Navbar */}
       <nav className="navbar">
         <h1 className="logo">Bhumika Pawar</h1>
