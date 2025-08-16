@@ -2,7 +2,7 @@
   "name": "bhumika-react-resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bhumika-react-resume.github.io/bhumikap1",
+  "homepage": "https://bhumikap1.github.io/Bhumika-ReactResume",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.7.0",
