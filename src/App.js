@@ -11,15 +11,15 @@ function App() {
         options={{
           background: { color: "#0d0d0d" },
           fpsLimit: 60,
-          interactivity: {
-            events: {
-              onHover: { enable: true, mode: "repulse" },
-              resize: true,
-            },
-          },
           particles: {
             color: { value: "#00bcd4" },
-            links: { color: "#00bcd4", distance: 150, enable: true, opacity: 0.3, width: 1 },
+            links: {
+              color: "#00bcd4",
+              distance: 150,
+              enable: true,
+              opacity: 0.3,
+              width: 1,
+            },
             move: { enable: true, speed: 2 },
             number: { value: 60 },
             opacity: { value: 0.5 },
