@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bhumikap1/static/css/main.9da9c89a.css",
+    "main.js": "/bhumikap1/static/js/main.68eb2fdc.js",
+    "static/js/453.e169e55a.chunk.js": "/bhumikap1/static/js/453.e169e55a.chunk.js",
+    "index.html": "/bhumikap1/index.html",
+    "main.9da9c89a.css.map": "/bhumikap1/static/css/main.9da9c89a.css.map",
+    "main.68eb2fdc.js.map": "/bhumikap1/static/js/main.68eb2fdc.js.map",
+    "453.e169e55a.chunk.js.map": "/bhumikap1/static/js/453.e169e55a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9da9c89a.css",
+    "static/js/main.68eb2fdc.js"
+  ]
+}
