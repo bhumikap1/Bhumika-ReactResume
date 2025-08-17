@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Bhumika-ReactResume/static/css/main.7fddb961.css",
-    "main.js": "/Bhumika-ReactResume/static/js/main.0a3c3102.js",
+    "main.css": "/Bhumika-ReactResume/static/css/main.e9249897.css",
+    "main.js": "/Bhumika-ReactResume/static/js/main.d1fe9dd7.js",
     "static/js/453.e169e55a.chunk.js": "/Bhumika-ReactResume/static/js/453.e169e55a.chunk.js",
     "index.html": "/Bhumika-ReactResume/index.html",
-    "main.7fddb961.css.map": "/Bhumika-ReactResume/static/css/main.7fddb961.css.map",
-    "main.0a3c3102.js.map": "/Bhumika-ReactResume/static/js/main.0a3c3102.js.map",
+    "main.e9249897.css.map": "/Bhumika-ReactResume/static/css/main.e9249897.css.map",
+    "main.d1fe9dd7.js.map": "/Bhumika-ReactResume/static/js/main.d1fe9dd7.js.map",
     "453.e169e55a.chunk.js.map": "/Bhumika-ReactResume/static/js/453.e169e55a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fddb961.css",
-    "static/js/main.0a3c3102.js"
+    "static/css/main.e9249897.css",
+    "static/js/main.d1fe9dd7.js"
   ]
 }
