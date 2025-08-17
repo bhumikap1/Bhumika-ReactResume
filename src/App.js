@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Typewriter } from "react-simple-typewriter";
 
 function App() {
   useEffect(() => {
@@ -15,6 +16,7 @@ function App() {
       <nav className="navbar">
         <h1 className="logo">Bhumika Pawar</h1>
         <ul>
+          <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -24,6 +26,33 @@ function App() {
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      {/* Hero Section */}
+      <section id="hero" className="hero" data-aos="zoom-in">
+        <h1>
+          Hi, I'm <span className="highlight">Bhumika Pawar</span>
+        </h1>
+        <h2>
+          <Typewriter
+            words={[
+              "Aspiring Software Engineer",
+              "Web Developer",
+              "Cloud Enthusiast",
+              "ML Explorer",
+            ]}
+            loop={true}
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={2000}
+          />
+        </h2>
+        <div className="hero-buttons">
+          <a href="#contact" className="btn">Hire Me</a>
+          <a href="/Bhumika-ReactResume/BhumikaPawar_final.pdf" className="btn-outline" target="_blank" rel="noreferrer">Download Resume</a>
+        </div>
+      </section>
 
       {/* About */}
       <section id="about" className="section" data-aos="fade-up">
@@ -50,22 +79,42 @@ function App() {
       <section id="education" className="section" data-aos="fade-right">
         <h2>Education</h2>
         <ul>
-          <li>B.Tech in Computer Science, Graphic Era University (2021–Present) – GPA: 8.47</li>
-          <li>12th, ST. Theresa Sr. Sec. School (2020) – 80%</li>
-          <li>10th, ST. Theresa Sr. Sec. School (2017) – 85%</li>
+          <li>B.Tech in Computer Science, Graphic Era University (2021–2025) – GPA: 8.47</li>
+          <br></br>
+          <li>12th, ST. Theresa Sr. Sec. School (2019-2020) – 80%</li>
+          <br></br>
+          <li>10th, ST. Theresa Sr. Sec. School (2018-2019) – 85%</li>
         </ul>
       </section>
 
-      {/* Projects */}
+      {/* Projects with Cards */}
       <section id="projects" className="section" data-aos="zoom-in">
         <h2>Projects</h2>
-        <ul>
-          <li><strong>Text Summarization (GenAI):</strong> Web app using Hugging Face & LangChain.</li>
-          <li><strong>Health Care Recommendation System:</strong> ML-based health suggestions. <a href="https://github.com/bhumikap1/HealthCare-Recommendation-System-using-ML.git" target="_blank" rel="noreferrer">GitHub</a></li>
-          <li><strong>Fake News Detection:</strong> Frontend for detecting fake/real news.</li>
-          <li><strong>Event Arena:</strong> MERN Stack event booking system. <a href="https://github.com/Divya-910/EventArena.git" target="_blank" rel="noreferrer">GitHub</a></li>
-          <li><strong>SafeBs:</strong> React Native app for booking rides. <a href="https://github.com/bhumikap1/SafeBSUpdated.git" target="_blank" rel="noreferrer">GitHub</a></li>
-        </ul>
+        <div className="project-grid">
+          <div className="project-card">
+            <h3>Text Summarization (GenAI)</h3>
+            <p>Web app using Hugging Face & LangChain.</p>
+          </div>
+          <div className="project-card">
+            <h3>Health Care Recommendation System</h3>
+            <p>ML-based health suggestions.</p>
+            <a href="https://github.com/bhumikap1/HealthCare-Recommendation-System-using-ML.git" target="_blank" rel="noreferrer">🔗 GitHub</a>
+          </div>
+          <div className="project-card">
+            <h3>Fake News Detection</h3>
+            <p>Frontend for detecting fake/real news.</p>
+          </div>
+          <div className="project-card">
+            <h3>Event Arena</h3>
+            <p>MERN Stack event booking system.</p>
+            <a href="https://github.com/Divya-910/EventArena.git" target="_blank" rel="noreferrer">🔗 GitHub</a>
+          </div>
+          <div className="project-card">
+            <h3>SafeBs</h3>
+            <p>React Native app for booking rides.</p>
+            <a href="https://github.com/bhumikap1/SafeBSUpdated.git" target="_blank" rel="noreferrer">🔗 GitHub</a>
+          </div>
+        </div>
       </section>
 
       {/* Internships */}
@@ -73,15 +122,30 @@ function App() {
         <h2>Internships</h2>
         <ul>
           <li><strong>Physics-Wallah Pvt. Ltd.:</strong> Built cross-platform mobile app with Django, BeeWare, PyTesseract & cloud storage. <a href="https://github.com/bhumikap1/physics-walla-intern.git" target="_blank" rel="noreferrer">GitHub</a></li>
+          <br></br>
           <li><strong>Novanector Pvt. Ltd.:</strong> Portfolio website with Java, Spring Boot, AWS cloud deployment. <a href="https://github.com/bhumikap1/Novanector-Task1.git" target="_blank" rel="noreferrer">GitHub</a></li>
         </ul>
       </section>
 
-      {/* Skills */}
+      {/* Skills with Progress Bars */}
       <section id="skills" className="section" data-aos="fade-up">
         <h2>Skills</h2>
-        <p><strong>Languages:</strong> C++, Java, C, Python, HTML, CSS, SQL, JavaScript</p>
-        <p><strong>Tools & Frameworks:</strong> AWS, Cloud, Django, Hugging Face, React Native</p>
+        <div className="skill-bar">
+          <p>C++</p>
+          <div className="bar"><div className="fill" style={{width:"85%"}}></div></div>
+        </div>
+        <div className="skill-bar">
+          <p>JavaScript</p>
+          <div className="bar"><div className="fill" style={{width:"75%"}}></div></div>
+        </div>
+        <div className="skill-bar">
+          <p>Python</p>
+          <div className="bar"><div className="fill" style={{width:"50%"}}></div></div>
+        </div>
+        <div className="skill-bar">
+          <p>AWS Cloud</p>
+          <div className="bar"><div className="fill" style={{width:"70%"}}></div></div>
+        </div>
       </section>
 
       {/* Certifications */}
@@ -89,7 +153,9 @@ function App() {
         <h2>Certifications</h2>
         <ul>
           <li><a href="https://coursera.org/verify/UE6CHX7BU8CJ" target="_blank" rel="noreferrer">Cloud Operations on AWS</a></li>
+          <br></br>
           <li><a href="https://coursera.org/verify/YLYV64P5N35A" target="_blank" rel="noreferrer">Hosting Web Apps on Amazon Lightsail</a></li>
+          <br></br>
           <li><a href="https://www.coursera.org/account/accomplishments/verify/4YCKS97BZP85" target="_blank" rel="noreferrer">AWS S3 Basics</a></li>
         </ul>
       </section>
