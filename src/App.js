@@ -50,7 +50,7 @@ function App() {
         </h2>
         <div className="hero-buttons">
           <a href="#contact" className="btn">Hire Me</a>
-          <a href="/Bhumika-ReactResume/BhumikaPawar_final.pdf" className="btn-outline" target="_blank" rel="noreferrer">Download Resume</a>
+          <a href="/Bhumika-ReactResume/BhumikaPawar_resume.pdf" className="btn-outline" target="_blank" rel="noreferrer">Download Resume</a>
         </div>
       </section>
 
