@@ -1,0 +1,122 @@
+.workexperience-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #111; /* dark background */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05); /* subtle glow */
+}
+
+/* Section title */
+.workexperience-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #e5e7eb; /* light text */
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 3px solid #34d399; /* green accent */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Each work item */
+.workexperience-item {
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 4px solid #10b981; /* emerald green */
+  background: #1a1a1a; /* dark gray card */
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.workexperience-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Position title */
+.position {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f9fafb; /* white */
+}
+
+/* Company name */
+.company {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #d1d5db;
+  margin: 5px 0;
+}
+
+/* Duration */
+.duration {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #9ca3af;
+  margin-bottom: 10px;
+}
+
+/* Work details */
+.details {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+/* =============================
+   RESPONSIVENESS
+   ============================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .workexperience-container {
+    margin: 30px 15px;
+    padding: 15px;
+  }
+
+  .workexperience-title {
+    font-size: 1.8rem;
+  }
+
+  .position {
+    font-size: 1.2rem;
+  }
+
+  .company {
+    font-size: 1rem;
+  }
+
+  .details {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .workexperience-container {
+    margin: 20px 10px;
+    padding: 12px;
+  }
+
+  .workexperience-title {
+    font-size: 1.5rem;
+  }
+
+  .position {
+    font-size: 1.1rem;
+  }
+
+  .company {
+    font-size: 0.95rem;
+  }
+
+  .duration {
+    font-size: 0.9rem;
+  }
+
+  .details {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}

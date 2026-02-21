@@ -1,0 +1,133 @@
+.education-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #111; /* dark background for card */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05); /* soft glow */
+}
+
+/* Title */
+.education-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #e5e7eb; /* light text */
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 3px solid #60a5fa; /* blue underline */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Each item */
+.education-item {
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 4px solid #2563eb; /* blue accent */
+  background: #1a1a1a; /* dark gray card */
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Degree */
+.degree {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+/* Institution */
+.institution {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #d1d5db;
+  margin: 5px 0;
+}
+
+/* Duration */
+.duration {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+
+/* CGPA & Percentage */
+.cgpa,
+.percentage {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f3f4f6;
+  margin-bottom: 8px;
+}
+
+/* Details */
+.details {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+/* =============================
+   RESPONSIVENESS
+   ============================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .education-container {
+    margin: 30px 15px;
+    padding: 15px;
+  }
+
+  .education-title {
+    font-size: 1.8rem;
+  }
+
+  .degree {
+    font-size: 1.2rem;
+  }
+
+  .institution {
+    font-size: 1rem;
+  }
+
+  .details {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .education-container {
+    margin: 20px 10px;
+    padding: 12px;
+  }
+
+  .education-title {
+    font-size: 1.5rem;
+  }
+
+  .degree {
+    font-size: 1.1rem;
+  }
+
+  .institution {
+    font-size: 0.95rem;
+  }
+
+  .duration,
+  .cgpa,
+  .percentage {
+    font-size: 0.9rem;
+  }
+
+  .details {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}

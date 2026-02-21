@@ -1,0 +1,145 @@
+.certifications-container {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #e5e7eb; /* light text */
+  background: #111; /* dark background */
+  border-radius: 12px;
+}
+
+/* Section Title */
+.certifications-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #ecf1fa; /* blue accent */
+  letter-spacing: 1px;
+  border-bottom: 3px solid #3b82f6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Certifications Grid */
+.certifications-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+/* Certification Card */
+.certification-item {
+  background: #1a1a1a;
+  border: 1px solid #2d2d2d;
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.certification-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Text Styles */
+.certification-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #3b82f6; /* light blue */
+  margin-bottom: 12px;
+}
+
+.certification-issuer {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #d1d5db;
+  margin-bottom: 6px;
+}
+
+.certification-date,
+.certification-expiry,
+.certification-id {
+  font-size: 0.95rem;
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+.certification-expiry {
+  font-weight: 500;
+  color: #ef4444; /* red for expiry */
+}
+
+.certification-id {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Certification Link */
+.certification-link {
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+  color: #fff;
+  background: #2563eb;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.certification-link:hover {
+  background: #1e40af;
+}
+
+/* =============================
+   RESPONSIVENESS
+   ============================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .certifications-container {
+    padding: 40px 15px;
+  }
+
+  .certifications-title {
+    font-size: 2rem;
+  }
+
+  .certification-name {
+    font-size: 1.2rem;
+  }
+
+  .certification-issuer,
+  .certification-date,
+  .certification-expiry,
+  .certification-id {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .certifications-container {
+    padding: 30px 12px;
+  }
+
+  .certifications-title {
+    font-size: 1.6rem;
+  }
+
+  .certification-item {
+    padding: 18px;
+  }
+
+  .certification-name {
+    font-size: 1.1rem;
+  }
+
+  .certification-link {
+    font-size: 0.85rem;
+    padding: 7px 12px;
+  }
+}

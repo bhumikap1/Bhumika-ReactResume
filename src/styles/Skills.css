@@ -1,0 +1,122 @@
+.skills-container {
+  padding: 50px 20px;
+  width: 600px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #e5e7eb; /* light text */
+  background: #111; /* dark background */
+  border-radius: 12px;
+}
+
+/* Section Title */
+.skills-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #f1f3f7; /* blue accent */
+  letter-spacing: 1px;
+  border-bottom: 3px solid #34d399;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* Skills Grid */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Skill Card */
+.skill-item {
+  background: #1a1a1a;
+  border: 1px solid #2d2d2d;
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Skill Category */
+.skill-category {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #f2f6fa; /* light blue */
+  border-left: 4px solid #34d399;
+  padding-left: 10px;
+}
+
+/* Skill List */
+.skill-item ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skill-item ul li {
+  font-size: 1rem;
+  margin: 6px 0;
+  padding-left: 18px;
+  position: relative;
+  color: #d1d5db;
+}
+
+.skill-item ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #10b981; /* green checkmark */
+  font-size: 0.9rem;
+}
+
+/* =============================
+   RESPONSIVENESS
+   ============================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 40px 15px;
+  }
+
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .skill-category {
+    font-size: 1.2rem;
+  }
+
+  .skill-item ul li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .skills-container {
+    padding: 30px 12px;
+  }
+
+  .skills-title {
+    font-size: 1.6rem;
+  }
+
+  .skill-item {
+    padding: 18px;
+  }
+
+  .skill-category {
+    font-size: 1.1rem;
+  }
+
+  .skill-item ul li {
+    font-size: 0.9rem;
+  }
+}
